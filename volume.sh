@@ -4,19 +4,19 @@ echo $VOLUME
 images_path="/home/ls/Desktop/code/linux-customizations/svgs/"
 IMAGE=""
 
-if [[  $VOLUME -lt 81 ]]; then
+if [[  $VOLUME -lt 80 ]]; then
     IMAGE="${images_path}audio-high.svg";
     echo $IMAGE;
 
 fi
 
-if [[  $VOLUME -lt 61 ]]; then
+if [[  $VOLUME -lt 59 ]]; then
     IMAGE="${images_path}audio-medium.svg";
     echo $IMAGE;
 
 fi
 echo 'before chekcing if volume'
-if [[ $VOLUME -lt 44 ]]; then
+if [[ $VOLUME -lt 39 ]]; then
     IMAGE="${images_path}audio-low.svg";
     echo $IMAGE;
 
